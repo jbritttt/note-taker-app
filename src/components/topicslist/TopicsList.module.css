@@ -1,0 +1,21 @@
+.topicsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 900px;
+  padding: 2rem;
+  margin: auto;
+  margin-top:2rem;
+  
+  
+  border: 1px solid rgb(196, 196, 196);
+  
+  
+
+}
+
+.topicsWrapper .topicTitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
