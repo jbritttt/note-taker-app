@@ -1,4 +1,6 @@
-.topicContainer{
-
+.container{
+  margin: auto;
  margin-bottom: 10rem;
+ width: 80%;
+ max-width: 900px;
 }
