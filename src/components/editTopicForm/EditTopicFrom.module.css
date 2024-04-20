@@ -1,0 +1,18 @@
+.form input{
+
+    width:100%;
+    padding:1rem;
+    margin-top:2rem
+  }
+
+
+  .form .BtnForm{
+    padding:1rem;
+    border:none;
+  margin-top:2rem;
+    background-color: rgb(5, 138, 5);
+    font-weight:bold;
+    width:fit-content;
+    color:white
+    
+  }
