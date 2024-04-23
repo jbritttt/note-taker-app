@@ -35,7 +35,7 @@ async function TopicsList()  {
 <div>
 {
 topics.map((t) => (
-    <div className={styles.topicsWrapper}>
+    <div className={styles.topicsWrapper} key={t._id}>
       <div className={styles.topicTitleWrapper}>
         <h2>{t.title}</h2>
         <div>
