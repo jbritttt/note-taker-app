@@ -2,9 +2,11 @@
 
 import { HiOutlineTrash} from "react-icons/hi"
 import styles from "./RemoveBtn.module.css"
-
+import { useRouter } from "next/navigation"
 
 const RemoveBtn = ({ id }) => {
+
+    const router = useRouter()
     const removeTopic = async() => {
 
         const confirmed = confirm(' Are you sure?')
@@ -14,16 +16,21 @@ const RemoveBtn = ({ id }) => {
                 
                   })
 
+                  if(res.ok){
+                    router.refresh()
+                  }
+                  
+
         }
     }
     return ( 
-
-<button onClick={removeTopic} class={styles.deleteBtn}>
+<>
+<button onClick={removeTopic} className={styles.deleteBtn}>
 <HiOutlineTrash size={24}/>
 
 </button>
 
-
+</>
         
      );
 }

@@ -29,7 +29,7 @@ return res.json()
 async function TopicsList()  {
 
   const topics = await getTopics()
-  //let kkk = topics.map(t => t.title)
+  
   return (
 
 <div>

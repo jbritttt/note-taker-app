@@ -13,6 +13,7 @@ const AddTopic = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (!title || !description) {
       alert("Title and Description cant be empty");
       return
@@ -46,6 +47,7 @@ const AddTopic = () => {
           value={title} 
           type="text"
           placeholder="Topic Title"
+          
         />
 
         <input
